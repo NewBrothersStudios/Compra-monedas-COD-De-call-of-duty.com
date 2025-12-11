@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda Blitz</title>
+
+<style>
+
+    body {
+        background: #0a0a0a;
+        color: white;
+        margin: 0;
+        padding: 20px;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #00ff75;
+        text-shadow: 0 0 10px #00ff75aa;
+        animation: fadeIn 1s ease-out;
+    }
+
+    .store {
+        display: grid;
+        gap: 22px;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        padding-bottom: 40px;
+    }
+
+    .item {
+        background: #111;
+        border-radius: 18px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 0 10px #00ff7550;
+        transition: 0.25s ease;
+        overflow: hidden;
+        animation: popIn 0.45s ease-out;
+    }
+
+    .item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 18px #00ff75;
+    }
+
+    .item img {
+        width: 100%;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        animation: float 3s infinite ease-in-out;
+    }
+
+    .price {
+        font-size: 19px;
+        color: #00ff75;
+        font-weight: bold;
+        margin-bottom: 12px;
+        text-shadow: 0 0 8px #00ff75aa;
+    }
+
+    /* BOTÓN WHATSAPP ESTILO KICK */
+    .btn-buy {
+        display: block;
+        background: #00ff75;
+        color: #000;
+        font-weight: bold;
+        padding: 10px 14px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 17px;
+        box-shadow: 0 0 12px #00ff75aa;
+        transition: 0.25s ease-in-out;
+        margin-top: 5px;
+    }
+
+    .btn-buy:hover {
+        box-shadow: 0 0 18px #00ff75;
+        transform: scale(1.07);
+    }
+
+    /* ANIMACIONES */
+    @keyframes popIn {
+        from { transform: scale(0.85); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes float {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+</style>
+
+</head>
+<body>
+
+<h1>💥 Tienda Oficial de Blitz</h1>
+
+<div class="store">
+
+    <!-- 40 BLITZ -->
+    <div class="item">
+        <img src="imagenes/1765411182648.jpg" alt="40 Blitz">
+        <div class="price">40 Blitz — $0.49</div>
+        <a class="btn-buy" 
+           href="https://wa.me/50300000000?text=Hola,%20quiero%20comprar%20el%20paquete%20de%2040%20Blitz%20($0.49)">
+           Comprar por WhatsApp
+        </a>
+    </div>
+
+    <!-- 150 BLITZ -->
+    <div class="item">
+        <img src="imagenes/1765410660868.jpg" alt="150 Blitz">
+        <div class="price">150 Blitz — $1.99</div>
+        <a class="btn-buy" 
+           href="https://wa.me/50300000000?text=Hola,%20quiero%20comprar%20el%20paquete%20de%20150%20Blitz%20($1.99)">
+           Comprar por WhatsApp
+        </a>
+    </div>
+
+    <!-- 250 BLITZ -->
+    <div class="item">
+        <img src="imagenes/1765411170025.jpg" alt="250 Blitz">
+        <div class="price">250 Blitz — $2.99</div>
+        <a class="btn-buy" 
+           href="https://wa.me/50300000000?text=Hola,%20quiero%20comprar%20el%20paquete%20de%20250%20Blitz%20($2.99)">
+           Comprar por WhatsApp
+        </a>
+    </div>
+
+    <!-- 445 BLITZ -->
+    <div class="item">
+        <img src="imagenes/1765410465599.jpg" alt="445 Blitz">
+        <div class="price">445 Blitz — $5.49</div>
+        <a class="btn-buy" 
+           href="https://wa.me/50300000000?text=Hola,%20quiero%20comprar%20el%20paquete%20de%20445%20Blitz%20($5.49)">
+           Comprar por WhatsApp
+        </a>
+    </div>
+
+    <!-- 1000 BLITZ -->
+    <div class="item">
+        <img src="imagenes/1765410349227.jpg" alt="1000 Blitz">
+        <div class="price">1,000 Blitz — $11.99</div>
+        <a class="btn-buy" 
+           href="https://wa.me/50373826693?text=Hola,%20quiero%20comprar%20el%20paquete%20de%201000%20Blitz%20($11.99)">
+           Comprar por WhatsApp
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
